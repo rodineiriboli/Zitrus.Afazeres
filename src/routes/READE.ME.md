@@ -1,0 +1,1 @@
+Arquivo temporário para subir estruturad e pastas no git.
