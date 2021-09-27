@@ -32,7 +32,7 @@ export const Container = styled.div`
     margin-top: -3px;
   }
 
-  .icon {
+  .icone {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     height: 2rem;

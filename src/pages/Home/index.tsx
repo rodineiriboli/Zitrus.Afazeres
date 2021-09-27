@@ -1,28 +1,28 @@
 // import React from 'react';
-import { CloseButton, Col, Container, Form, ListGroup, Row } from 'react-bootstrap';
+// import { CloseButton, Col, Container, Form, ListGroup, Row } from 'react-bootstrap';
 import { Container as HomeContainer } from './styles';
 // import Zytrus from '../../assets/zytrus_img.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import Checkbox from '../../components/Checkbox';
 // import { CheckboxContainer } from '../../components/CheckboxContainer';
 import { Afazer } from '../Afazer';
-import { useHistory, useParams } from 'react-router-dom';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+// import { useHistory, useParams } from 'react-router-dom';
+// import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export function Home() {
 
   // Navegação e parâmetros da rota
-  const history = useHistory();
-  const { id: editId } = useParams<{ id: string }>();
-  const returnUrl = `/editar/${editId ? editId : ''}`;
+  // const history = useHistory();
+  // const { id: editId } = useParams<{ id: string }>();
+  // const returnUrl = `/editar/${editId ? editId : ''}`;
   // const test = () => { "bla"; }
-  const teste = 'BLABSSLAAAADDDA';
+  // const teste = 'BLABSSLAAAADDDA';
 
 
-  const checkClick = () => {
-    console.log('alerta click');
-  }
+  // const checkClick = () => {
+  //   console.log('alerta click');
+  // }
 
   /*
   INFIMA = dark,
