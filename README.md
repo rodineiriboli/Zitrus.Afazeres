@@ -16,6 +16,6 @@ Digite [http://localhost:3000](http://localhost:3000) para visualizar no browser
 
 #### Veja a documentação do React.js se desejar e do boilerplate.
 
-Leia mais em  [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Leia mais sobre o boilerplate em  [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 E para do React: [React documentation](https://reactjs.org/).
