@@ -4,23 +4,15 @@ Este é um projeto criado a partir do boilerplate [Create React App](https://git
 
 ## Execução
 ### Após clonar
-No diretório do projeto rode o comando:\
+No diretório do projeto rode o comando:
 ### `yarn` ou   `npm install` 
-Isto atualizara os pacotes que são necessários para a execução com êxito.\
+Isto atualizara os pacotes que são necessários para a execução com êxito.
 
-Após isso, execute o comando:\
+Após isso, execute o comando:
 ### `yarn start` ou `npm start` 
 
 O app rodará na porta 3000, como indicado abaixo.\
- Na url digite [http://localhost:3000](http://localhost:3000) para visualizar no browser.\
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Digite [http://localhost:3000](http://localhost:3000) para visualizar no browser.
 
 ## Veja a documentação do React.js se desejar e do boilerplate.
 
