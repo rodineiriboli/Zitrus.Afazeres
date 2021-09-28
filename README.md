@@ -1,5 +1,5 @@
 # Executando o projeto
-Este projeto foi desenvolvido para atender ao critério de seleção na Zitrus (Unimed).
+Este projeto foi desenvolvido para atender ao critério de seleção na Zitrus (Unimed).\
 Este é um projeto criado a partir do boilerplate [Create React App](https://github.com/facebook/create-react-app).
 
 ## Execução
