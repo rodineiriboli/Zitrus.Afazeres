@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 import { Prioridade } from "../Enums/Prioridade";
-import { AfazerModel } from "../models/AfazerModel";
+import { AfazerModel } from "../models/Afazer/AfazerModel";
 
 interface LoadingContextData {
   afazerId: number;

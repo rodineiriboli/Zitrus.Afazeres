@@ -3,9 +3,6 @@ import {
   RouteProps as ReactDOMRouteProps,
   Route as ReactDOMRoute,
 } from 'react-router-dom';
-//import { routes } from '.';
-
-// import { useAuth } from "../authentication/hooks/useAuth";
 
 interface RouteProps extends ReactDOMRouteProps {
   isPrivate?: boolean;
@@ -19,7 +16,6 @@ const Route: React.FC<RouteProps> = ({
   componentProps,
   ...rest
 }) => {
-  // const { isAuthenticated, signinRedirect } = useAuth();
 
   return (
     <ReactDOMRoute
@@ -29,12 +25,10 @@ const Route: React.FC<RouteProps> = ({
           return <Component {...componentProps} />
         }
 
-        // const isLoggedIn = isAuthenticated();
-        if (true) {//(isLoggedIn) {
+        if (true) {
           return <Component {...componentProps} />
         }
         else {
-          // signinRedirect();
           return null;
         }
       }}

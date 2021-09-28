@@ -1,7 +1,4 @@
-// import React from 'react';
-// import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes';
-// import { Home } from './pages/Home';
 import GlobalStyle from './styles/global';
 import './components/FontAwesomeIcons';
 import Zytrus from '../src/assets/zytrus_img.png';
@@ -23,9 +20,6 @@ function App() {
             />
           </Navbar.Brand>
           <Navbar.Text className='titulo justify-content-start'>Afazeres</Navbar.Text>
-          {/* <Navbar.Brand className="d-flex" href="https://github.com/rodineiriboli/Zitrus.Afazeres" target='_blank'>
-              <FontAwesomeIcon icon={faGithub} className='icon-git' />
-            </Navbar.Brand> */}
         </Container>
       </Navbar>
       <Routes />

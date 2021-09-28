@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Col, Form, FormControl, ListGroup, Row } from 'react-bootstrap';
 import { Prioridade } from '../../Enums/Prioridade';
 import { PrioridadeUI } from '../../Enums/PrioridadeUI';
-import { AfazerModel } from '../../models/AfazerModel';
+import { AfazerModel } from '../../models/Afazer/AfazerModel';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';

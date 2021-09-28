@@ -1,4 +1,4 @@
-import { Prioridade } from "../Enums/Prioridade";
+import { Prioridade } from "../../Enums/Prioridade";
 
 export class AfazerModel {
   public id: number = 0;
