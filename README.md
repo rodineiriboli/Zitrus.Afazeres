@@ -14,7 +14,7 @@ Após isso, execute o comando:
 O app rodará na porta 3000, como indicado abaixo.\
 Digite [http://localhost:3000](http://localhost:3000) para visualizar no browser.
 
-## Veja a documentação do React.js se desejar e do boilerplate.
+#### Veja a documentação do React.js se desejar e do boilerplate.
 
 Leia mais em  [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
