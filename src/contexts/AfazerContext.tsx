@@ -1,12 +1,17 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 import { Prioridade } from "../Enums/Prioridade";
+import { AfazerModel } from "../models/AfazerModel";
 
 interface LoadingContextData {
+  afazerId: number;
   afazerNome: string;
-  prioridade: Prioridade;
+  afazerPrioridade: Prioridade;
+  afazerList: AfazerModel[];
 
+  setAfazerId: React.Dispatch<React.SetStateAction<number>>;
   setAfazerNome: React.Dispatch<React.SetStateAction<string>>;
-  setPrioridade: React.Dispatch<React.SetStateAction<Prioridade>>;
+  setAfazerPrioridade: React.Dispatch<React.SetStateAction<Prioridade>>;
+  setAfazerList: React.Dispatch<React.SetStateAction<AfazerModel[]>>;
 }
 
 interface AfazerProviderProps {
@@ -17,12 +22,14 @@ const AfazerContext = createContext({} as LoadingContextData);
 
 export function AfazerProvider({ children }: AfazerProviderProps) {
   const [afazerNome, setAfazerNome] = useState('');
-  const [prioridade, setPrioridade] = useState<Prioridade>(Prioridade.MEDIA);
+  const [afazerPrioridade, setAfazerPrioridade] = useState<number>(0);
+  const [afazerId, setAfazerId] = useState<number>(1);
+  const [afazerList, setAfazerList] = useState<AfazerModel[]>([]);
 
   return (
     <AfazerContext.Provider
       value={{
-        afazerNome, setAfazerNome, prioridade, setPrioridade
+        afazerId, setAfazerId, afazerNome, setAfazerNome, afazerPrioridade, setAfazerPrioridade, afazerList, setAfazerList
       }}>
       {children}
     </AfazerContext.Provider>
