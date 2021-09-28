@@ -18,4 +18,4 @@ Digite [http://localhost:3000](http://localhost:3000) para visualizar no browser
 
 Leia mais sobre o boilerplate em  [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-E para do React: [React documentation](https://reactjs.org/).
+E sobre o React: [React documentation](https://reactjs.org/).
