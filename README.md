@@ -18,4 +18,4 @@ Digite [http://localhost:3000](http://localhost:3000) para visualizar no browser
 
 Leia mais em  [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-E para o React: [React documentation](https://reactjs.org/).
+E para do React: [React documentation](https://reactjs.org/).
