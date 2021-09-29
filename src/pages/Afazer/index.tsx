@@ -62,7 +62,6 @@ export function Afazer() {
 
   //Salva um registro de afazer
   const salvarAfazer = () => {
-    debugger
     let afazerEdit = afazerList.filter((f, i) => f.id === afazerId);
     var afazer;
 

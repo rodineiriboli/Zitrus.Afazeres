@@ -11,7 +11,6 @@ export function Lista() {
   const { afazerNome, afazerId, afazerPrioridade, afazerList, setAfazerList, setAfazerId, setAfazerNome, setAfazerPrioridade } = useAfazerContext();
 
   const editarAfazer = (key: any) => {
-    debugger
     var afazer = afazerList.filter((f, i) => i === key);
     history.push(`editar/${key}`)
     setAfazerId(afazer[0].id);
