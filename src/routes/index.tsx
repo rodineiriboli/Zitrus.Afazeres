@@ -19,7 +19,6 @@ export const routes: RouteDefinition[] = [
     component: Home,
   },
 
-  // Rotas de edição /cadastro/{etapa}/{id}
   {
     path: '/novo',
     name: 'Novo Afazer',

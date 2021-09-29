@@ -1,7 +1,5 @@
 import styled from "styled-components";
-// import { Container as BootstrapContainer } from "react-bootstrap";
 
-// export const Container = styled(BootstrapContainer)`
 export const Container = styled.div`
   .icon-git {
     hover: #def393;
@@ -42,7 +40,6 @@ export const Container = styled.div`
   .list-item {
     padding-bottom: 0.3rem !important;
 
-    // Configurações para texto com reticências
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

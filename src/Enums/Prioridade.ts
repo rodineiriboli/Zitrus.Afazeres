@@ -6,7 +6,6 @@ export enum Prioridade {
   ALTA = 3,
 }
 
-//Mapeia a Prioridade  da interface para numérico
 export const prioridadeMap: { [id: string]: Prioridade } = {
   [PrioridadeUI.BAIXA]: Prioridade.BAIXA,
   [PrioridadeUI.MEDIA]: Prioridade.MEDIA,

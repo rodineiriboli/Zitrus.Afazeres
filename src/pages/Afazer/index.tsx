@@ -1,17 +1,13 @@
 import { faTimes, faEdit } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Button, Col, Form, FormControl, ListGroup, Row } from 'react-bootstrap';
 import { Prioridade } from '../../Enums/Prioridade';
 import { PrioridadeUI } from '../../Enums/PrioridadeUI';
-import { AfazerModel } from '../../models/Afazer/AfazerModel';
-
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-
 import { Container } from './styles';
-import { useHistory, useParams } from 'react-router-dom';
 import { useAfazerContext } from '../../contexts/AfazerContext';
 
 interface IFormInputs {
@@ -19,7 +15,6 @@ interface IFormInputs {
   prioridade: number
 }
 
-// Schema de validação do formulário
 const schema = yup.object({
   nome:
     yup.string()
@@ -37,8 +32,6 @@ const schema = yup.object({
 
 export function Afazer() {
 
-  const history = useHistory();
-
   const {
     afazerNome,
     setAfazerNome,
@@ -55,12 +48,10 @@ export function Afazer() {
     ordenarPrioridade();
   }, [afazerList]);
 
-  //Validação do formulário
   const { register, handleSubmit, formState: { errors } } = useForm<IFormInputs>({
     resolver: yupResolver(schema)
   });
 
-  //Salva um registro de afazer
   const salvarAfazer = () => {
     let afazerEdit = afazerList.filter((f, i) => f.id === afazerId);
     var afazer;
@@ -76,7 +67,6 @@ export function Afazer() {
       return;
     }
 
-    //Edição
     setAfazerId(afazerId);
     setAfazerNome(afazerNome);
     setAfazerPrioridade(afazerPrioridade);
@@ -192,11 +182,10 @@ export function Afazer() {
                     variant={item.prioridade === Prioridade.ALTA ? "danger" : item.prioridade === Prioridade.MEDIA ? "light" : "secondary"}
                   >
                     <Col sm={11}>
-                      <Form.Check className='me-2' type="checkbox" label={item.descricao} /*onClick={checkClick}*/ />
+                      <Form.Check className='me-2' type="checkbox" label={item.descricao} />
                     </Col>
                     <Col sm={1}>
                       <FontAwesomeIcon icon={faEdit} className='icon-edit icone' onClick={() => editarAfazer(key)} />
-                      {/* <FontAwesomeIcon icon={faEdit} className='icon-edit icone' onClick={() => history.push(`editar/${key}`)} /> */}
                       <FontAwesomeIcon icon={faTimes} className='icon-close icone' onClick={() => setAfazerList(afazerList.filter((f, i) => i !== key))} />
                     </Col>
                   </ListGroup.Item>

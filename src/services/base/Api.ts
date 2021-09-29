@@ -26,7 +26,6 @@ const onFullFilled = (response: AxiosResponse<any>) => {
 
 const onRejected = (error: Error) => Promise.reject(error);
 
-// configura os interceptadores para cada instância do axios
 backendApi.interceptors.response.use(onFullFilled, onRejected);
 
 export { backendApi };
